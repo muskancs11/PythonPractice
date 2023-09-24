@@ -1,0 +1,14 @@
+bnum=int(input("Enter a binary Number:"))
+dnum=0
+i=1
+while bnum!=0:
+    rem=bnum%10
+    dnum=dnum+(rem*i)
+    i=i*2
+    bnum=int(bnum/10)
+print("\n Equivalent decimal value=",dnum)
+def octtohex(O):
+    return hex(int(O,8))
+onum=input("Enter the octal number:")
+hnum=octtohex(onum)
+print("\n Equivalent hexal value=",hnum[2:].upper())
