@@ -1,0 +1,37 @@
+class palistr:
+    def __init__(self):
+        self.ispali=False
+    def chkpalindrome(self,mystr):
+        if mystr==mystr[::-1]:
+            self.ispali=True
+        else:
+            self.ispali=False
+        return self.ispali
+class PaliInt(palistr):
+    def __init__(self):
+        self.ispali=False
+    def chkpalindrome(self,val):
+        temp=val
+        rev=0
+        while temp!=0:
+            dig=temp%10
+            rev=(rev*10)+dig
+            temp=temp//10
+        if val==rev:
+            self.ispali=True
+        else:
+            self.ispali=False
+        return self.ispali
+st=input("Enter a string:")
+stobj=palistr()
+if stobj.chkpalindrome(st):
+    print("Given string is a palindrome")
+else:    
+    print("Given string is not a palindrome")
+
+val=int(input("Enter a integers:"))
+valobj=PaliInt()
+if valobj.chkpalindrome(val):
+    print("Given integer is a palindrome")
+else:    
+    print("Given integer is not a palindrome")
