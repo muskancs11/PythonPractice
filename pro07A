@@ -1,0 +1,45 @@
+import math
+
+class shape:
+    def __init__(self):
+        self.area=0
+        self.name=""
+    def showArea(self):
+        print("The area of the",self.name,"is",self.area,"units")
+
+class circle(shape):
+    def __init__(self,radius):
+        self.area=0
+        self.name="circle"
+        self.radius=radius
+    def calcArea(self):
+        self.area=math.pi*self.radius*self.radius
+class rectangle(shape):
+    def __init__(self,length,breadth):
+        self.area=0
+        self.name="Rectangle"
+        self.length=length
+        self.breadth=breadth
+    def calcArea(self):
+       self.area=self.length*self.breadth
+class triangle(shape):
+    def __init__(self,base,heigth):
+        self.area=0
+        self.name="Triangle"
+        self.base=base
+        self.heigth=heigth
+    def calcArea(self):
+        self.area=self.base*self.heigth/2
+
+
+C1=circle(5)
+C1.calcArea()
+C1.showArea()
+
+r1=rectangle(5,4)
+r1.calcArea()
+r1.showArea()
+
+t1=triangle(3,4)
+t1.calcArea()
+t1.showArea()
