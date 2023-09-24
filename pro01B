@@ -1,0 +1,11 @@
+a=input("Enter the palindrome number:")
+b=a[::-1]
+print(b)
+if(a==b):
+    print("It is a palindrome number")
+else:
+    print("It is not a palindrome number")
+
+for i in range(10):
+    if(b.count(str(i))>0):
+       print(str(i),"appears",b.count(str(i)),"times")
