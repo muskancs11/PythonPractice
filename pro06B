@@ -18,3 +18,8 @@ if os.path.isfile("myZip.zip"):
     print("Archive myZip.zip created successfully")
 else:
     print("Error creating zip archive.")
+
+
+
+
+create one folder put inside some text file enter in the input
