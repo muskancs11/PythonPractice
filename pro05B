@@ -9,3 +9,11 @@ with open('example.txt','r') as f:
         matches=email_regex.findall(line)
         for match in matches:
             print(match)
+
+
+add txt file in the same folder as example.txt
++916263354978
+youarethe@best.com
+www.web 
+patelmudkznmb@gmail.com
+
